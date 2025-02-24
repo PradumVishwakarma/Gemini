@@ -9,7 +9,11 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+<<<<<<< HEAD
     "react-scripts": "5.0.1",
+=======
+    "react-scripts": "^5.0.1",
+>>>>>>> 4778d4db19fc30c01bdc2bc479a256c797c383a1
     "react-syntax-highlighter": "^15.6.1",
     "web-vitals": "^4.2.4"
   },
