@@ -19,12 +19,12 @@ const Sidebar = () => {
             <i className="fa-solid fa-plus"></i>
             {menu ? <p className='d-flex justify-content-center align-items-center mb-0'>Add</p> : null}
           </div>
-          <div className="data d-flex justify-content-start align-items-center overflow-auto flex-column mt-2 h-100 gap-2" style={{ width: '100%', scrollbarWidth: 'none' }}>
+          <div className="data d-flex justify-content-start align-items-center flex-column mt-2 gap-2" style={{ height:'100%', width: '100%', overflow:'auto',scrollbarWidth:'none'}}>
             {previous.map((item, index) => {
               return (
                 <div key={index} className='gap-1 d-flex  align-items-center' onClick={() => loadPrompt(item.value || item)} style={{ height: '40px', width: '90%', backgroundColor: menu ? '#acd0f1' : 'transparent', cursor: 'pointer', justifyContent: menu ? 'start' : 'center', boxShadow: menu ? '0px 2px 5px rgba(0, 0, 0, 0.3)' : '0px 3px 5px rgba(0, 0, 0, 0)' }}>
-                  <i className="fa-solid fa-desktop  d-flex justify-content-center align-items-center " style={{ width: '30px' }}></i>
-                  {menu ? <p className='mb-0 w-75'>{item.slice(0, 15)}...</p> : null}
+                  <i className="fa-solid fa-desktop  d-flex justify-content-center align-items-center" style={{height:'40px', width: '30px'}}></i>
+                  {menu ? <p className='mb-0 w-75 '>{item.slice(0, 15)}...</p> : null}
                 </div>
               );
             })}
